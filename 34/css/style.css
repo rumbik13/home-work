@@ -1,0 +1,23 @@
+body {
+    box-sizing: border-box;
+}
+
+table  {
+    border: 1px solid #000;
+    border-collapse: collapse;
+}
+
+caption {
+    border: 1px solid #000;
+    border-bottom: 0;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.red {
+    color: red;
+    border: 1px solid #000;
+}
+
+td, th {
+    border: 1px solid #000;
+}
