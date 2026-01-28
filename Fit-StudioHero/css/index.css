@@ -1,0 +1,162 @@
+.hero {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 28px;
+    padding-top: 80px ;
+}
+
+.hero::after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 48px;
+    background: url("../img/декор.svg") repeat-x;
+}
+
+
+
+.hero-h1 {
+    font-family: "Oswald" , sans-serif;
+    color: #2C332F;
+    font-weight: 600;
+    font-size: 62px;
+    line-height: 115%;
+    text-transform: uppercase;
+    margin: 10px 0;
+    margin-bottom: 40px;
+}
+
+.strong {
+    color: #3596ED;
+    font-family: "Oswald" , sans-serif;
+    font-weight: 600;
+    font-size: 62px;
+    line-height: 115%;
+    text-transform: uppercase;
+}
+
+
+
+.block-hero-1 {
+    max-height: 513px;
+    max-width: 492px;
+    margin-left: auto;
+}
+
+.hero-img {
+    margin-right: auto;
+}
+
+.hero .text {
+    max-width: 440px;
+    margin-bottom: 140px;
+}
+
+.sporty-people {
+    max-width: 700px;
+    max-height: 513px;
+}
+
+.button-hero {
+    text-decoration: none;
+    border: none;
+    color: #fff;
+    background-color: #3596ED;
+    padding: 19px 32px;
+    width: 270px;
+    height: 57px;
+    font-family: "Ubuntu" , sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 130%;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    text-align: center;
+    transition: opacity 0.2s;
+}
+
+.button-hero:hover {
+    opacity: 0.85;
+}
+
+.hero , 
+.news {
+    margin-bottom: 140px;
+}
+
+.new-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 28px;
+}
+.article-title {
+    position: relative;
+    left: 231px;
+    font-family: "Oswald";
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 115%;
+    text-transform: uppercase;
+    color: #2C332F;
+    max-width: 596px;
+    margin-bottom: 40px;
+}
+
+.news-article {
+    background-color: #fff;
+    border: 1px solid #d3cbd9;
+    width: 284px;
+    overflow: hidden;
+}
+
+.news-article img {
+    display: block;
+}
+
+.news-info {
+    padding: 20px 20px 0;
+}
+
+.news-article footer {
+    margin-top: auto;
+    padding: 0 20px 20px;
+}
+
+.news-info data {
+    font-family: "Ubuntu" , sans-serif;
+    font-weight: 300;
+    color: #858E8A;
+    letter-spacing: 0.04em;
+    margin: 0 0 8px;
+}
+
+.news-link {
+    display: inline-flex;
+    gap: 8px;
+    align-items: center;
+    font-family: "Ubuntu" , sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 130%;
+    color: #3596ED;
+}
+
+.news-link::after {
+    display: inline-block;
+    content: "";
+    width: 22px;
+    height: 9px;
+    background-image: url("../img/arrow-right-icon.svg");
+    transition: transform 0.2s;
+}
+
+.news-link:hover::after {
+    transform: translateX(5px);
+}
+
+
+
+
