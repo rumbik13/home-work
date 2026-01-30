@@ -1,13 +1,7 @@
-body .news , .faq {
-    padding: 0 145px;
-}
+
 
 
 .hero {
-    position: relative;
-    display: flex;
-    align-items: center;
-    gap: 28px;
     padding-top: 80px ;
 }
 
@@ -18,9 +12,17 @@ body .news , .faq {
     width: 100%;
     height: 48px;
     background: url("../img/декор.svg") repeat-x;
+    top: 550px;
 }
 
-
+.block-hero-1 {
+    display: flex;
+    align-items: flex-start;
+    max-width: 1220px;
+    max-height: 513px;
+    gap: 28px;
+    margin: 0 auto;
+}
 
 .hero-h1 {
     font-family: "Oswald" , sans-serif;
@@ -29,8 +31,9 @@ body .news , .faq {
     font-size: 62px;
     line-height: 115%;
     text-transform: uppercase;
-    margin: 10px 0;
+    margin: 0 0;
     margin-bottom: 40px;
+    max-width: 492px;
 }
 
 .strong {
@@ -42,26 +45,9 @@ body .news , .faq {
     text-transform: uppercase;
 }
 
-
-
-.block-hero-1 {
-    max-height: 513px;
-    max-width: 492px;
-    margin-left: auto;
-}
-
-.hero-img {
-    margin-right: auto;
-}
-
 .hero .text {
     max-width: 440px;
     margin-bottom: 140px;
-}
-
-.sporty-people {
-    max-width: 700px;
-    max-height: 513px;
 }
 
 .button {
@@ -87,16 +73,21 @@ body .news , .faq {
 }
 
 .hero , 
-.news {
+.news ,
+.faq {
     margin-bottom: 140px;
 }
 
-.new-container {
+.new-container ,
+.news h2  {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 28px;
 }
+
+
+
 .article-title {
     font-family: "Oswald";
     font-weight: 600;
@@ -104,7 +95,6 @@ body .news , .faq {
     line-height: 115%;
     text-transform: uppercase;
     color: #2C332F;
-    max-width: 596px;
     margin-bottom: 40px;
 }
 
@@ -160,24 +150,34 @@ body .news , .faq {
     transform: translateX(5px);
 }
 
+
 .faq {
-    margin-bottom: 140px;
+    position: relative;
 }
 
-
+.faq::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    width: calc(50% - 250px);
+    height: 48px;
+    top: 215px;
+    background: url("../img/декор.svg") repeat-x;
+}
 
 .faq-container {
     display: flex;
     gap: 28px;
-}
-
-.faq-container-2 {
-display: flex;
-align-items: center;
-flex-wrap: wrap;
+    max-width: 1220px;
+    margin: auto;
 }
 
 
+
+details {
+    margin-bottom: 20px;
+    border-block: 1px solid #d3cbd9;
+}
 
 details[open] summary::after {
     transform: rotate(180deg);
@@ -188,6 +188,20 @@ details .title-medium  {
     align-items: center;
     justify-content: space-between;
     list-style: none;
+}
+
+details > p {
+    padding: 0 20px 20px;
+}
+
+summary {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    list-style: none;
+    cursor: pointer;
+    padding: 20px;
 }
 
 summary::after {
@@ -202,7 +216,24 @@ summary::-webkit-details-marker {
     display: none;
 }
 
+.article-title {
+    display: flex;
+    margin: 0 auto;
+    max-width: 492px;
+    margin-bottom: 40px;
+    position: relative;
+    left: -365px;
+}
 
+
+.news-h2 {
+    display: flex;
+    margin: 0 auto;
+    max-width: 492px;
+    margin-bottom: 40px;
+    position: relative;
+    left: -390px;
+}
 
 
 
