@@ -1,4 +1,8 @@
-
+.hero,
+.news,
+.faq {
+    padding: 0 20px;
+}
 
 
 .hero {
@@ -17,7 +21,6 @@
 
 .block-hero-1 {
     display: flex;
-    align-items: flex-start;
     max-width: 1220px;
     max-height: 513px;
     gap: 28px;
@@ -98,6 +101,10 @@
     margin-bottom: 40px;
 }
 
+.news {
+    display: none;
+}
+
 .news-article {
     background-color: #fff;
     border: 1px solid #d3cbd9;
@@ -152,6 +159,7 @@
 
 
 .faq {
+    display: none;
     position: relative;
 }
 
@@ -233,6 +241,18 @@ summary::-webkit-details-marker {
     margin-bottom: 40px;
     position: relative;
     left: -390px;
+}
+
+@media (width <= 1440px) {
+    .sporty-people {
+        width: 50%;
+    }
+}
+
+@media (width <= 992px) {
+    .block-hero-1 {
+        flex-direction: column;
+    }
 }
 
 

@@ -49,4 +49,16 @@
     color: #858E8A;
 }
 
+@media (width <= 768px) {
+    .menu ul {
+        flex-direction: column;
+        gap: 25px;
+    }
+}
+
+@media (width <= 576px) {
+    .footer {
+        padding-top: 40px;
+    }
+}
 
