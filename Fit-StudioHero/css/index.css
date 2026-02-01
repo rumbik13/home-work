@@ -277,7 +277,7 @@ summary::-webkit-details-marker {
     }
 
     .hero img {
-        width: 100%;
+        width: 98%;
     }
 
     .block-hero-1 {
@@ -364,6 +364,7 @@ summary::-webkit-details-marker {
 
     .faq-container {
         max-width: 612px;
+        padding: 0 20px;
     }
 }
 
