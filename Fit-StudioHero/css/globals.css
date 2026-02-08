@@ -38,9 +38,11 @@ body {
     border-bottom: 2px solid #858E8A;
 }
 
-.container {
+.container,
+.article {
     max-width: 1220px;
     margin: 0 auto;
+    padding: 0 15px;
 }
 
 
@@ -57,13 +59,13 @@ body {
     text-align: right;
 }
 
-.tel-text {
+.header__tel-text {
     margin: 0 0 8px;
     font-size: 14px;
 }
 
 
-.tel-link {
+.header__tel-link {
     color: #2C332F;
     text-decoration: none;
     font-weight: 500;
@@ -73,7 +75,7 @@ body {
     transition: color 0.2s;
 }
 
-.tel-link:hover {
+.header__tel-link:hover {
     color: #3596ed;
 }
 

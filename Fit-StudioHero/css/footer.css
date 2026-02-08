@@ -7,18 +7,18 @@
     margin-top: auto;
 }
 
-.footer-top {
+.footer__top {
     padding-bottom: 40px;
     margin-bottom: 40px;
     border-bottom: 1px solid #d3cbd9;
 }
 
-.footer-logo {
+.footer__logo {
     display: inline-block;
     margin-bottom: 40px;
 }
 
-.menu ul {
+.footer__menu ul {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -35,7 +35,7 @@
 
 }
 
-.nav-link {
+.footer__nav-link {
     font-family: "Ubuntu" , sans-serif;
     font-weight: 400;
     font-size: 16px;
@@ -47,11 +47,11 @@
     transition: color 0.2s;
 }
 
-.nav-link:hover {
+.footer__nav-link:hover {
     color: #3596ed;
 }
 
-.Copyright {
+.footer__Copyright {
     font-family: "Ubuntu" , sans-serif ;
     font-weight: 400;
     font-size: 14px;
@@ -60,7 +60,7 @@
 }
 
 @media (width <= 768px) {
-    .menu ul {
+    .footer__menu ul {
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
             -ms-flex-direction: column;

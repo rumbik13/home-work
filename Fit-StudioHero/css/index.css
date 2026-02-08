@@ -13,7 +13,7 @@
     top: 550px;
 }
 
-.block-hero-1 {
+.hero__block-hero-1 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -22,7 +22,7 @@
     margin: 0 auto;
 }
 
-.hero-h1 {
+.hero__h1 {
     font-family: "Oswald" , sans-serif;
     color: #2C332F;
     font-weight: 600;
@@ -34,7 +34,7 @@
     max-width: 492px;
 }
 
-.strong {
+.hero__strong {
     color: #3596ED;
     font-family: "Oswald" , sans-serif;
     font-weight: 600;
@@ -43,12 +43,12 @@
     text-transform: uppercase;
 }
 
-.hero .text {
+.hero__text {
     max-width: 440px;
     margin-bottom: 140px;
 }
 
-.button {
+.hero__link {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -74,7 +74,7 @@
     transition: opacity 0.2s;
 }
 
-.button:hover {
+.hero__link:hover {
     opacity: 0.85;
 }
 
@@ -84,7 +84,7 @@
     margin-bottom: 140px;
 }
 
-.new-container   {
+.new__container   {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -102,7 +102,7 @@
     margin-bottom: 40px;
 }
 
-.news-article {
+.news__article {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -119,20 +119,20 @@
     overflow: hidden;
 }
 
-.news-article img {
+.news__article img {
     display: block;
 }
 
-.news-info {
+.news__info {
     padding: 20px 20px 0;
 }
 
-.news-article footer {
+.news__article footer {
     margin-top: auto;
     padding: 0 20px 20px;
 }
 
-.news-info data {
+.news__info data {
     font-family: "Ubuntu" , sans-serif;
     font-weight: 300;
     color: #858E8A;
@@ -140,7 +140,7 @@
     margin: 0 0 8px;
 }
 
-.news-link {
+.news__link {
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
     display: inline-flex;
@@ -155,7 +155,7 @@
     color: #3596ED;
 }
 
-.news-link::after {
+.news__link::after {
     display: inline-block;
     content: "";
     width: 22px;
@@ -168,7 +168,7 @@
     transition: transform 0.2s, -webkit-transform 0.2s;
 }
 
-.news-link:hover::after {
+.news__link:hover::after {
     -webkit-transform: translateX(5px);
         -ms-transform: translateX(5px);
             transform: translateX(5px);
@@ -183,7 +183,7 @@
     top: 215px;
 }
 
-.faq-container {
+.faq__container {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -260,7 +260,7 @@ summary::-webkit-details-marker {
 }
 
 
-.news-h2 {
+.news__h2 {
     margin-bottom: 40px;
 }
 
@@ -280,7 +280,7 @@ summary::-webkit-details-marker {
         width: 98%;
     }
 
-    .block-hero-1 {
+    .hero__block-hero-1 {
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
             -ms-flex-direction: column;
@@ -293,26 +293,23 @@ summary::-webkit-details-marker {
                 justify-content: center;
     }
     
-    .hero-info .hero-h1 ,
-    .hero-info .text {
+    .hero__info .hero__h1 ,
+    .hero__info .text {
         text-align: center;
     }
     
-    .hero-h1 {
+    .hero__h1 {
         font-size: 52px;
         margin-bottom: 30px;
     }
 
-    .header{
-        margin: 20px;
-    }
-
-    .button {
+    
+    .hero__link {
         margin: 0 auto;
     } 
     
     
-    .new-container {
+    .new__container {
         -ms-flex-wrap: wrap;
             flex-wrap: wrap;
         -webkit-box-pack: center;
@@ -321,14 +318,14 @@ summary::-webkit-details-marker {
         
     }
 
-    .news-article {
+    .news__article {
         -ms-flex-preferred-size: 50%;
             flex-basis: 50%;
         max-width: 350px;
         gap: 20px;
     }
 
-    .news-article img {
+    .news__article img {
         width: 100%;
     }
 
@@ -336,7 +333,7 @@ summary::-webkit-details-marker {
         display: none;
     }
 
-    .faq-container {
+    .faq__container {
         -webkit-box-orient: vertical;
         -webkit-box-direction: reverse;
             -ms-flex-direction: column-reverse;
@@ -352,19 +349,23 @@ summary::-webkit-details-marker {
 }
 
 @media (width <= 768px) {
-    .hero-h1 {
+    .hero__h1 {
         font-size: 50px;
     }
 
-    .news-article {
+    .news__article {
         -ms-flex-preferred-size: 100%;
             flex-basis: 100%;
         max-width: 400px;
     }
 
-    .faq-container {
+    .faq__container {
         max-width: 612px;
         padding: 0 20px;
+    }
+    
+    .hero__link {
+        margin-top: 20px;
     }
 }
 
@@ -374,11 +375,11 @@ summary::-webkit-details-marker {
         margin-top: 0;
     }
 
-    .hero-info {
+    .hero__info {
         max-width: 410px;
     }
 
-    .hero-h1 {
+    .hero__h1 {
         font-size: 42px;
     }
 }
