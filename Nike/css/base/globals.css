@@ -6,7 +6,6 @@
 
 .page__body {
     background-color: var(--bg-color);
-    min-height: 200vh;
     min-width: 375px;
 }
 
