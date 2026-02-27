@@ -9,7 +9,6 @@
 .page__body {
     background-color: var(--bg-color);
     min-width: 375px;
-    min-height: 250vh;
 }
 
 .page__body--no-scroll {
@@ -53,4 +52,5 @@ button:focus-visible {
     font-size: clamp(32px,0.936rem + 4.54vw, 60px);
     text-transform: uppercase;
     color: var(--main-color);
+
 }
