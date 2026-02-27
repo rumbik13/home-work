@@ -2,11 +2,14 @@
     font-family: var(--font-family);
     font-weight: 400;
     color: var(--main-color);
+    scroll-behavior: smooth;
+    scroll-padding-top: 98px;
 }
 
 .page__body {
     background-color: var(--bg-color);
     min-width: 375px;
+    min-height: 250vh;
 }
 
 .page__body--no-scroll {
@@ -18,8 +21,36 @@
     margin-inline: auto;
 }
 
+img {
+    object-fit: cover;
+}
+
 a:focus-visible,
 button:focus-visible {
     outline: 1px solid var(--accent-color);
     outline-offset: 2px;
+}
+
+.text-regular,
+.text-light {
+    font-family: var(--font-family);
+    font-size: 16px;
+    line-height: 140%;
+    color: var(--main-color);
+}
+
+.text-light {
+    font-weight: 300;
+}
+
+.text-regular {
+    font-weight: 400;
+}
+
+.title-md {
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: clamp(32px,0.936rem + 4.54vw, 60px);
+    text-transform: uppercase;
+    color: var(--main-color);
 }
