@@ -1,0 +1,10 @@
+@import "./base/globals.css";
+@import "./base/vars.css";
+@import "./base/normalize.css";
+@import "./base/fonts.css";
+@import "./blocks/header.css";
+@import "./blocks/menu.css";
+@import "./blocks/search-modal.css";
+@import "./blocks/hero.css";
+@import "./blocks/burger.css";
+@import "./blocks/categories.css";

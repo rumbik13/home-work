@@ -1,0 +1,58 @@
+.page__body {
+    min-width: 400px;
+    padding-inline: 15px;
+}
+
+.container {
+    max-width: var(--container-width);
+    margin-inline: auto;
+    margin-bottom: 28px;
+}
+
+.title-md {
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: clamp(1.75rem, 1.581rem + 0.68vw, 2rem);
+    line-height: 120%;
+    color: #000;
+}
+
+.title-sm {
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: clamp(2.813rem, 2.443rem + 1.58vw, 3.625rem);
+    line-height: 120%;
+    color: #000;
+}
+
+.title-xs {
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 42px;
+    line-height: 125%;
+    color: #000;
+}
+
+.text {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 120%;
+    color: #000;
+}
+
+.text-md {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 128%;
+    color: #000;
+}
+
+.text-xs {
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 120%;
+    color: #000;
+}

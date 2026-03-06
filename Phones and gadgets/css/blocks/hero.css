@@ -1,0 +1,219 @@
+.hero__container {
+    background-color: #DCE5E2;
+    border-radius: 20px;
+}
+
+.hero__slide-img {
+    display: block;
+    width: 100%;
+}
+
+.swiper__content {
+    padding-left: 56px;
+    max-width: 588px;
+}
+
+@media (width <=768px) {
+
+    .hero__container {
+        padding: 15px 15px 0;
+    }
+
+    .swiper__content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .swiper__content {
+        padding-left: 0;
+    }
+}
+
+
+
+@media (width <=992px) {
+    .swiper__content {
+        text-align: center;
+    }
+}
+
+.hero__title {
+    margin-bottom: 14px;
+}
+
+.hero__content-description {
+    margin-bottom: 30px;
+}
+
+.hero__slider-wrapper {
+    position: relative;
+    z-index: var(--layer-0);
+    border: 2px solid var(--accent-color);
+    border-radius: 12px;
+    -webkit-box-shadow: 0 0 30px 5px var(--accent-glow-color),
+        inset 0 0 30px 5px var(--accent-glow-color);
+    box-shadow: 0 0 30px 5px var(--accent-glow-color),
+        inset 0 0 30px 5px var(--accent-glow-color);
+}
+
+.hero__slider-button {
+    position: absolute;
+    top: 50%;
+    z-index: var(--layer-2);
+    width: 14px;
+    height: 26px;
+    transition: opacity var(--transition-time);
+}
+
+.hero__swiper-button {
+    padding-block: 14px;
+    padding-inline: 53px;
+    border: 1px solid #000;
+    border-radius: 28px;
+    transition: opacity var(--transition-time);
+}
+
+@media (min-width: 769px) and (max-width: 992px) {
+    .hero__swiper-button {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+@media (any-hover: hover) {
+
+    .hero__slider-button:hover,
+    .hero__swiper-button:hover {
+        opacity: 0.60;
+    }
+}
+
+.hero__slider-button--prev {
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.hero__slider-button--next {
+    -webkit-transform: translateY(-50%) rotate(180deg);
+    -ms-transform: translateY(-50%) rotate(180deg);
+    transform: translateY(-50%) rotate(180deg);
+}
+
+@media (width > 768px) {
+    .hero__slider-button--prev {
+        left: 18px;
+    }
+
+    .hero__slider-button--next {
+        right: 18px;
+    }
+}
+
+@media (width <=768px) {
+    .hero__slider-button--prev {
+        left: 10px;
+    }
+
+    .hero__slider-button--next {
+        right: 10px;
+    }
+}
+
+.hero__slider-button-icon {
+    stroke: currentColor;
+}
+
+.hero__slide-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    width: 100%;
+}
+
+@media (width <=992px) {
+    .hero__slide-inner {
+        flex-direction: column;
+        justify-content: center
+    }
+
+    .hero__swiper-button {
+        text-align: center;
+    }
+}
+
+@media (width <=768px) {
+    .hero__slide-img {
+        width: 100%;
+        max-height: 241px;
+    }
+}
+
+.hero__title {
+    margin-bottom: 20px;
+}
+
+.hero__title-accent {
+    color: var(--accent-color);
+}
+
+.hero__description,
+.hero__price {
+    margin-bottom: 40px;
+}
+
+.hero__sizes-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+@media (width <= 701px) {
+    .swiper-pagination-bullet {
+    width: 10px !important;
+    height: 10px !important;
+    background-color: #CDE1F1 !important;
+    border-radius: 50% !important;
+    opacity: 1 !important;
+    transition: opacity 0.3s ease;
+}
+
+.swiper-pagination-bullet:not(.swiper-pagination-bullet-active) {
+    opacity: 0.4 !important;
+}
+
+.swiper-pagination-bullet-active {
+    opacity: 1 !important;
+}
+}
+
+@media (width > 701px) {
+    .swiper-pagination-bullet {
+        width: 194px !important;
+        height: 2px !important;
+        border-radius: 0 !important;
+        background: #000000 !important;
+        opacity: 1 !important;
+        margin: 0 10px !important;
+        transition: opacity 0.3s ease;
+    }
+
+    .swiper-pagination-bullet:not(.swiper-pagination-bullet-active) {
+        background: #1eff00;
+    }
+
+    .swiper-pagination-bullet:not(.swiper-pagination-bullet-active) {
+        background: #605d5d98 !important;
+        /* Светло-серый цвет */
+        /* Либо можно оставить черный цвет, но понизить прозрачность: */
+        /* opacity: 0.3 !important; */
+    }
+
+    .swiper-pagination-bullet-active {
+        background: #000000 !important;
+        opacity: 1 !important;
+    }
+}

@@ -1,0 +1,24 @@
+:root {
+    --container-width: 1294px;
+    --container-padding: 15px;
+
+    --font-family: "Inter", sans-serif;
+    --second-family: "Readex Pro", sans-serif;
+
+    --main-color: #fff;
+    --text-color: #000;
+    --transition-time: 0.2s;
+    --bg-color: #2a2a29;
+    --secondary-color: #c9c69b;
+    --disabled-color: #5d5d56;
+    --disabled-glow-color: #5d5d564d;
+    --shadow-color: #e0e0e0;
+    --shadow-dark: #2f2c2c;
+    --overlay: linear-gradient(rgba(30, 30, 30, .9), #000 1810%);
+
+    --layer-negative: -1;
+    --layer-0: 0;
+    --layer-1: 1;
+    --layer-2: 2;
+    --layer-3: 3;
+}

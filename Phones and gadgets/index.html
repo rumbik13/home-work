@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phones and gadgets</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js" defer></script>
+    <script src="./js/index.js" type="module"></script>
+</head>
+
+<body class="page__body">
+    <header class="header">
+        <div class="container header__container">
+            <a href="#">
+                <img src="./icons/logo.svg" alt="Логотип CALIFORNIA" class="header__logo">
+            </a>
+            <nav id="header__menu" class="menu header__menu" aria-label="Навигационное меню">
+                <ul class="header__list header__text menu__list">
+                    <li class="menu__item">
+                        <a class="menu__link" href="#">ALL PRODUCTS</a>
+                    </li>
+                    <li class="menu__item">
+                        <label class="menu__link">
+                            <select class="menu-select">
+                                <option value="1">SOLUTION</option>
+                                <option value="2">ABOUT</option>
+                                <option value="3">SUPPORT</option>
+                            </select>
+                        </label>
+                        <svg width="12" height="8">
+                            <use href="./icons/header-sprite.svg#arrow"></use>
+                        </svg>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="#">ABOut</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="#">SUPPORT</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="header__actions">
+                <button class="header__actions-item" data-modal-button="search" data-modal-speed="300" aria-label="search" title="search">
+                    <svg width="24" height="24">
+                        <use href="./icons/header-sprite.svg#search"></use>
+                    </svg>
+                </button>
+                <button class="header__actions-item" aria-label="card" title="card">
+                    <svg width="24" height="24">
+                        <use href="./icons/header-sprite.svg#card"></use>
+                    </svg>
+                </button>
+                <button class="header__actions-item header__burger burger" aria-expanded="false"
+                    aria-controls="header__menu">
+                    <svg width="24" height="24">
+                        <use class="burger__icon-menu burger-menu" href="./icons/sprite.svg#burger"></use>
+                        <use class="burger__icon-cross" href="./icons/sprite.svg#cross" aria-label="Закрыть меню">
+                        </use>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <section class="hero">
+            <div class="hero__container hero__slider-wrapper container">
+                <button class="hero__slider-button hero__slider-button--prev" aria-label="Предыдущий слайд">
+                    <svg width="14" height="26">
+                        <use class="hero__slider-button-icon" href="./icons/hero-arrow.svg">
+
+                        </use>
+                    </svg>
+                </button>
+                <div class="swiper  hero__slider">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="hero__slide-inner">
+                                <div class="swiper__content">
+                                    <h1 class="title-sm hero__title">The new phones are here take a look.</h1>
+                                    <p class="text hero__content-description">Lorem ipsum dolor sit amet, consectetur
+                                        adipiscing elit. Scelerisque in est dui,
+                                        aliquam, tempor. Faucibus morbi turpis.</p>
+                                    <button class="hero__swiper-button text">Explore</button>
+                                </div>
+                                <picture>
+                                    <source srcset="./images/hero-img.webp">
+                                    <img src="./images/hero-img.png" class="hero__slide-img"
+                                        alt="Кроссовки Nike Air Mag, вид спереди" width="647" height="550">
+                                </picture>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="hero__slide-inner">
+                                <div class="swiper__content">
+                                    <h1 class="title-sm hero__title">The new phones are here take a look.</h1>
+                                    <p class="text hero__content-description">Lorem ipsum dolor sit amet, consectetur
+                                        adipiscing elit. Scelerisque in est dui,
+                                        aliquam, tempor. Faucibus morbi turpis.</p>
+                                    <button class="hero__swiper-button text">Explore</button>
+                                </div>
+                                <picture>
+                                    <source srcset="./images/hero-img.webp">
+                                    <img src="./images/hero-img.png" class="hero__slide-img"
+                                        alt="Кроссовки Nike Air Mag, вид спереди" width="647" height="550">
+                                </picture>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="hero__slide-inner">
+                                <div class="swiper__content">
+                                    <h1 class="title-sm hero__title">The new phones are here take a look.</h1>
+                                    <p class="text hero__content-description">Lorem ipsum dolor sit amet, consectetur
+                                        adipiscing elit. Scelerisque in est dui,
+                                        aliquam, tempor. Faucibus morbi turpis.</p>
+                                    <button class="hero__swiper-button text">Explore</button>
+                                </div>
+                                <picture>
+                                    <source srcset="./images/hero-img.webp">
+                                    <img src="./images/hero-img.png" class="hero__slide-img"
+                                        alt="Кроссовки Nike Air Mag, вид спереди" width="647" height="550">
+                                </picture>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination">
+                    </div>
+                </div>
+                <button class="hero__slider-button hero__slider-button--next" aria-label="Следующий  слайд">
+                    <svg width="14" height="26">
+                        <use class="hero__slider-button-icon" href="./icons/hero-arrow.svg">
+
+                        </use>
+                    </svg>
+                </button>
+            </div>
+        </section>
+        <section class="categories">
+            <div class="container categories__container">
+                <h2 class="categories__title title-xs">Shop our latest offers and categories</h2>
+                <p class="categories__description text-xs">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Scelerisque in est dui, aliquam,<br> tempor. Faucibus morbi turpis. Lorem ipsum dolor sit amet,
+                    consectetur adipiscing elit.</p>
+                <div class="categories__content">
+                    <div class="categories__content-container">
+                        <article class="categories__content-article">
+                            <picture class="categories__content-img">
+                                <source srcset="./images/macbook-img.webp">
+                                <img src="./images/macbook-img.png" alt="Apple Macbook Laptop">
+                            </picture>
+                                <p class="text-md categories__content-description">Laptops</p>
+                                <h3 class="title-md categories__content-article-title-1">True Laptop <br> Solution</h3>
+                        </article>
+                        <article class="categories__content-article categories__content-article-1">
+                            <picture>
+                                <source srcset="./images/watch-img.webp">
+                                <img  class="categories__content-img-watch" width="381" height="270" src="./images/watch-img.png" alt="Apple Watch">
+                            </picture>
+                                <div class="categories__content-article-block">
+                                    <p class="text-md categories__content-description">Watch</p>
+                                    <h3 class="title-md categories__content-article-title-1">Not just <br> stylisht</h3>
+                                </div>
+                        </article>
+                    </div>
+                    <div class="categories__content-container categories__content-container-2">
+                        <article class="categories__content-article-2 categories__content-article-phones">
+                            <picture>
+                                <source srcset="./images/phone-img-categories.webp">
+                                <img height="270" class="categories__content-article-phones-img" src="./images/phone-img-categories.png" alt="Apple Iphone">
+                            </picture>
+                            <div>
+                                <p class="text-md categories__content-article-description">Phones</p>
+                                <h3 class="title-md categories__content-article-title-2">Your day to day <br> life</h3>
+                            </div>
+                        </article>
+                        <article class="categories__content-article-2 categories__content-article-ipad">
+                            <div>
+                                <p class="text-md categories__content-article-description">Phones</p>
+                                <h3 class="title-md categories__content-article-title-2">Your day to day <br> life</h3>
+                            </div>
+                            <picture>
+                                <source srcset="./images/ipad-mini-img.webp">
+                                <img class="categories__content-article-ipad-img" src="./images/ipad-mini-img.png" alt="Apple Ipad Mini">
+                            </picture>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <div class="modal">
+        <div class="modal__window modal-search" data-modal-window="search">
+            <button class="modal__close" aria-label="Закрыть" title="Закрыть" data-modal-close>
+                <svg width="24" height="24">
+                    <use href="./icons/sprite.svg#cross"></use>
+                </svg>
+            </button>
+            <div class="model__content model-search__content">
+                <h3 class="modal-search__title title-sm">Поиск</h3>
+                <form class="modal-search__form">
+                    <label class="modal-search__label">
+                        <input class="modal-search__input" type="text" placeholder="Поиск" name="Search" required>
+                    </label>
+                    <button class="modal-search__submit title-xs">Искать</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
