@@ -33,6 +33,23 @@
     color: #000;
 }
 
+.title-x {
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 125%;
+    color: #000;
+}
+
+.text-sm {
+    font-family: var(--font-family);
+    font-style: italic;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 120%;
+    color: #000;
+}
+
 .text {
     font-family: var(--font-family);
     font-weight: 400;
@@ -54,5 +71,22 @@
     font-weight: 400;
     font-size: 14px;
     line-height: 120%;
+    color: #000;
+}
+
+.text-glow-xs {
+    font-family: var(--font-family);
+    font-style: italic;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 120%;
+    color: #4b4b4b;
+}
+
+.text-x {
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 129%;
     color: #000;
 }
