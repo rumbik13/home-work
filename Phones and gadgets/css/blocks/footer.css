@@ -1,6 +1,6 @@
 .footer__container {
     display: flex;
-    gap: 118px;
+    justify-content: space-between;
     padding: 45px 73px 64px;
     background-color: #F8F9FA;
     border-bottom: 1px solid #DCE5E2;
@@ -68,4 +68,5 @@
         flex-direction: column;
     }
 }
+
 
