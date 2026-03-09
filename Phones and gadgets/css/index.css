@@ -9,3 +9,8 @@
 @import "./blocks/burger.css";
 @import "./blocks/categories.css";
 @import "./blocks/product.css";
+@import "./blocks/limited-product.css";
+@import "./blocks/ideas.css";
+@import "./blocks/search.css";
+@import "./blocks/footer.css";
+@import "./blocks/hover.css";

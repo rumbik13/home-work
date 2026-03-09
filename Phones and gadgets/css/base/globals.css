@@ -1,6 +1,32 @@
+.page {
+    font-family: var(--font-family);
+    font-weight: 400;
+    scroll-behavior: smooth;
+    scroll-padding-top: 98px;
+    scrollbar-gutter: stable;
+}
+
 .page__body {
     min-width: 400px;
+}
+
+.page__body--no-scroll {
+    overflow-y: hidden;
+}
+
+.main {
     padding-inline: 15px;
+}
+
+img {
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+
+a:focus-visible,
+button:focus-visible {
+    outline: 1px solid var(--accent-color);
+    outline-offset: 2px;
 }
 
 .container {
@@ -31,10 +57,11 @@
     font-size: 42px;
     line-height: 125%;
     color: #000;
+    margin-bottom: 9px;
 }
 
 .title-x {
-    font-family: var(--second-family);
+    font-family: var(--font-family);
     font-weight: 400;
     font-size: 22px;
     line-height: 125%;
@@ -42,13 +69,14 @@
 }
 
 .text-sm {
-    font-family: var(--font-family);
-    font-style: italic;
+    font-family: var(--second-family);
     font-weight: 400;
     font-size: 18px;
     line-height: 120%;
     color: #000;
 }
+
+
 
 .text {
     font-family: var(--font-family);
@@ -67,7 +95,8 @@
 }
 
 .text-xs {
-    font-family: var(--second-family);
+    font-family: var(--font-family);
+    font-style: italic;
     font-weight: 400;
     font-size: 14px;
     line-height: 120%;
