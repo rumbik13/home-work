@@ -3,6 +3,7 @@
     align-items: center;
     justify-content: space-between;
     padding-block: 30px;
+    padding-inline: 15px;
 }
 
 .menu__link {
@@ -75,6 +76,7 @@
         text-align: end;
     }
 }
+
 
 
 
