@@ -1,86 +1,67 @@
-// Задача 1.
-// Создайте объект person с несколькими свойствами, содержащими информацию о вас. Затем выведите значения этих свойств в консоль.
+"use strict";
 
-// const user = {
-//   name: "Abdurrahman",
-//   age: 13,
-//   isProgrammer: true,
-//   "isStudy_atAROKEN.RU": true
-// };
+// Задание 1.
+// Дан массив пользователей:
+// const users = [
+//   { name: 'Alex', age: 24, isAdmin: false },
+//   { name: 'Bob', age: 13, isAdmin: false },
+//   { name: 'John', age: 31, isAdmin: true },
+//   { name: 'Jane', age: 20, isAdmin: false },
+// ]
+// Добавьте в конец массива двух пользователей:
+// { name: 'Ann', age: 19, isAdmin: false },
+// { name: 'Jack', age: 43, isAdmin: true }
 
-// console.log(user)
+// 1)
 
-// Задача 2.
-// Создайте функцию isEmpty, которая проверяет является ли переданный объект пустым. Если объект пуст - верните true, в противном случае false.
+const users = [
+  { name: "Alex", age: 24, isAdmin: false },
+  { name: "Bob", age: 13, isAdmin: false },
+  { name: "John", age: 31, isAdmin: true },
+  { name: "Jane", age: 20, isAdmin: false },
+];
 
-// const obj = {
-//   name: "",
-// };
+users.push(
+  { name: "Ann", age: 19, isAdmin: false },
+  { name: "Jack", age: 43, isAdmin: true },
+);
 
-// function isEmpty() {
-//   if (obj.name == "") {
-//     console.log(true);
-//   } else {
-//     console.log(false);
-//   }
-// }
-// console.log(isEmpty());
+// 2)
+function getUserAverageAge() {
+  if (users.length === 0) {
+    return 0;
+  }
+  const totalAge = users.reduce((sum, user) => sum + user.age, 0);
+  return totalAge / users.length;
+}
 
-// Задача 3.
-// Создайте объект task с несколькими свойствами: title, description, isCompleted.
-// Напишите функцию cloneAndModify(object, modifications), которая с помощью оператора spread создает копию объекта и применяет изменения из объекта modifications.
-// Затем с помощью цикла for in выведите все свойства полученного объекта.
+// console.log(getUserAverageAge());
 
-// const task = {
-//   title: "Изучить JavaScript",
-//   description: "Сделать домашку",
-//   isCompleted: false,
-// };
+// Задание 3.
+// Используя массив пользователей users из предыдущего задания, напишите функцию getAllAdmins(users), которая возвращает массив всех администраторов.
 
-// function cloneAndModify(object, modifications) {
-//   return { ...object, ...modifications };
-// }
+// 3)
 
-// const updatedTask = cloneAndModify(task, {
-//   isCompleted: true,
-// });
+function getAllAdmins() {
+  const admins = users.filter(user => user.isAdmin === true);
 
-// for (let key in updatedTask) {
-//   console.log(`${key}: ${updatedTask[key]}`);
-// }
+  console.log(admins);
+}
 
-// Задача 4.
-// Создайте функцию callAllMethods, которая принимает объект и вызывает все его методы.
+// getAllAdmins()
 
-// Пример использования:
-// const myObject = {
-//     method1() {
-//         console.log('Метод 1 вызван');
-//     },
-//     method2() {
-//         console.log('Метод 2 вызван');
-//     },
-//     property: 'Это не метод'
-// };
-// callAllMethods(myObject);
+// Задание 4.
+// Напишите функцию first(arr, n), которая возвращает первые n элементов массива. Если n == 0, возвращается пустой массив [], если n == undefined, то возвращается массив с первым элементом.
 
-// const callAllMethods = (obj) => {
-//   Object.values(obj).forEach(value => {
-//     if (typeof value === 'function') {
-//       value.call(obj);
-//     }
-//   });
-// };
+// 4 )
 
-// const myObject = {
-//     method1() {
-//         console.log('Метод 1 вызван');
-//     },
-//     method2() {
-//         console.log('Метод 2 вызван');
-//     },
-//     property: 'Это не метод'
-// };
+function first(arr, n) {
+  if (!arr) return []; 
 
+  if (n === undefined) return [arr[0]];
+  return arr.slice(0, n);
+}
+
+// console.log(first())
 
 
