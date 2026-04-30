@@ -3,17 +3,34 @@ import Modal from "./modal.js";
 import { heroSlider } from "./hero-slider.js";
 
 try {
-  const searchInput = document.querySelector(".search-input");
+  const searchInput = document.getElementById('searchInput');
+  const tags = document.querySelectorAll('.tag');
 
-  const tags = document.querySelectorAll(".tag");
 
-  tags.forEach((tag) => {
-    tag.addEventListener("click", () => {
-      searchInput.value = tag.textContent;
+window.onload = () => {
+  const savedValue = localStorage.getItem('lastSearch');
+  if (savedValue) {
+    searchInput.value = savedValue;
+  }
+};
 
-      searchInput.focus();
-    });
+
+function saveAndSearch(value) {
+  searchInput.value = value;
+  localStorage.setItem('lastSearch', value);
+}
+
+
+tags.forEach(tag => {
+  tag.addEventListener('click', () => {
+    saveAndSearch(tag.innerText);
   });
+});
+
+
+searchInput.addEventListener('input', (e) => {
+  localStorage.setItem('lastSearch', e.target.value);
+});
 
   new BurgerMenu({
     BURGER: "burger",
